@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: var(--mainfont);    
 }
 a{
     text-decoration: none;
@@ -14,7 +14,7 @@ ul{
 
 .container{
     width: 1440px;
-    height: 85px;
+    /* height: 85px; */
     padding-right: 240px;
     padding-left: 240px;
     margin-right: auto;
@@ -26,4 +26,42 @@ ul{
 .row{
     display: flex;
     justify-content: space-between;
+}
+
+.big_title {
+    width: 85%;
+    font-size: 4.8rem;
+    text-transform: capitalize;
+}
+
+
+
+.special_title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.special_title::after{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--maincolor);
+    /* margin-top: 10px; */
+}
+
+
+.special_title::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--maincolor);
+    /* margin-top: 10px; */
 }
